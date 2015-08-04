@@ -4,7 +4,7 @@
 
 ## Description
 
-In order to improve my *AngularJS* skills, I decided to re-do the whole website in this technology. Most of the past functionalities were kept, with the exception of some animations that were either removed or improved.
+In order to improve my *AngularJS* skills, I decided to re-do my personal website in this technology. Most of the past functionalities were kept, with the exception of some animations that were either removed or improved.
 The website is now easier to update and any structural changes to subpages are easier to make as all the partials were moved from the JavaScript to separate HTML partials.
 
 ## Used technology

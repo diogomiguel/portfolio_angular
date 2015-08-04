@@ -1,8 +1,8 @@
 {
-  "name": "angular-seed",
+  "name": "Diogo Silva AngularJS Portfolio",
   "private": true,
   "version": "1.0.0",
-  "description": "A starter project for AngularJS",
+  "description": "In order to improve my AngularJS skills, I decided to re-do my website using this technology.",
   "repository": "https://github.com/angular/angular-seed",
   "license": "MIT",
   "devDependencies": {
