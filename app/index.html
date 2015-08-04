@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myPortfolio" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myPortfolio" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myPortfolio" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myPortfolio" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Diogo Silva</title>
+  <meta name="description" content="Diogo Silva - front and back end developer - personal portfolio">
+  <meta name="keywords" content="Diogo Silva, developer, web developer, portfolio, front end, back end">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link href='http://fonts.googleapis.com/css?family=Questrial%7CExo+2:400,400italic,700,700italic%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
+  <link rel="shortcut icon" href="assets/imgs/favicon.ico?v=1.1">
+  <meta name="robots" content="nofollow,noindex">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body ng-controller="GridCtrl as grid">
+
+  <!--[if lt IE 9]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+
+  <div class="topnav" id="js-top">
+    <nav class="topnav__nav" id="js-topnav">
+      <ul>
+        <li class="topnav__nav__item">
+          <a role="button" ng-click="grid.filters.category = ''" ng-class="{ 'topnav__nav__item--active': grid.filters.category === '' }">All</a>
+        </li>
+        <li class="topnav__nav__item">
+          <a role="button" ng-click="grid.filters.category = 'project'" ng-class="{ 'topnav__nav__item--active': grid.filters.category === 'project' }">Projects</a>
+        </li>
+        <li class="topnav__nav__item">
+          <a role="button" ng-click="grid.filters.category = 'about'" ng-class="{ 'topnav__nav__item--active': grid.filters.category === 'about' }">About</a>
+        </li
+>        <li class="topnav__nav__item">
+          <a role="button" ng-click="grid.filters.category = 'blog'" ng-class="{ 'topnav__nav__item--active': grid.filters.category === 'blog' }">Blog</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="topnav__useful"> 
+      <ul>
+        <li class="topnav__useful__item topnav__useful__item--email">
+          <a href="mailto:diogo.miguel.fonseca@gmail.com">diogo.miguel.fonseca@gmail.com</a>
+        </li>
+        <li class="topnav__useful__item topnav__useful__item--github">
+          <a href="http://github.com/diogomiguel" target="_blank">github</a>
+        </li>
+        <li class="topnav__useful__item topnav__useful__item--linkedin">
+          <a href="http://uk.linkedin.com/in/diogomiguelfonseca" target="_blank">linkedin</a>
+        </li>
+        <li class="topnav__useful__item topnav__useful__item--twitter">
+          <a href="https://twitter.com/theUnfedGoblin" target="_blank">twitter</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="detailsview" id="js-detailsview" ng-view></div>
+
+  <div deckgrid class="deckgrid" source="grid.articles" filter="grid.filters" cardTemplate="components/grid/grid.html"></div>
+
+  <a href="#" scroll-to="js-top" duration="1800" class="backtop">
+      Back to the top
+  </a>
+
+  <!-- build:js js/diogomiguel.js -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+  <script src="bower_components/ngSmoothScroll/angular-smooth-scroll.js"></script>
+  <script src="bower_components/angular-deckgrid/angular-deckgrid.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-loading-bar/build/loading-bar.js"></script>
+  <script src="app.js"></script>
+  <script src="components/grid/grid-service.js"></script>
+  <script src="components/grid/grid-controller.js"></script>
+  <script src="components/grid/grid.js"></script>
+  <script src="project/project.js"></script>
+  <script src="blog/blog.js"></script>
+  <script src="about/about.js"></script>
+  <script src="contact/contact.js"></script>
+  <script src="skills/skills.js"></script>
+  <!-- endbuild -->
+</body>
+</html>

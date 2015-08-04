@@ -1,0 +1,92 @@
+<article class="grid__item {{card.category}}" ng-switch="card.category" ng-class="{'grid__item--active': card.id === $root.selected}">
+    <!-- MAIN -->
+    <div ng-switch-when="main" class="grid__item__wrapper grid__item__wrapper--main">
+        <header>
+            <h1 class="grid__item__wrapper__logo">
+                <img ng-src="{{card.image}}" alt="{{card.title}}" />
+                <span>{{card.title}}</span>
+            </h1>
+        </header>
+
+        <div class="grid__item__wrapper__content" ng-bind-html="card.content">
+        </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div ng-switch-when="project" class="grid__item__wrapper grid__item__wrapper--project">
+        <figure>
+            <img ng-src="{{card.image}}" alt="{{card.title}}" class="js__grid__item__wrapper__figure" />
+            <div class="js__grid__item__wrapper__rollover grid__item__rollover">
+                <a ng-href="/#/project/{{card.id}}" ng-click="$root.select(card.id)">
+                    Read More
+                </a>
+            </div>
+        </figure>
+        <h2>
+            {{card.title}}
+        </h2>
+        <div class="grid__item__wrapper__content">
+            <p ng-bind-html="card.content"></p>
+
+            <ul class="grid__item__wrapper__content__technologies">
+                <li ng-repeat="technology in card.technologies">
+                    {{technology}}
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            <ul class="grid__item__wrapper__content__links">
+                <li class="grid__item__wrapper__content__links__readmore">
+                    <a ng-href="/#/project/{{card.id}}" ng-click="$root.select(card.id)">
+                        Read More
+                    </a>
+                </li>
+                <li class="grid__item__wrapper__content__links__link" ng-if="card.website">
+                    <a ng-href="{{card.website}}" target="_blank">
+                        Link to Website
+                    </a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <div ng-switch-when="about" class="grid__item__wrapper grid__item__wrapper--about">
+        <div class="grid__item__wrapper__header">
+            <h2>
+                {{card.title}}
+            </h2>
+        </div>
+         <div class="js__grid__item__wrapper__rollover grid__item__rollover">
+            <a ng-href="/#/{{card.id}}" ng-click="$root.select(card.id)">
+                Read More
+            </a>
+        </div>
+    </div>
+
+    <!-- BLOG -->
+    <div ng-switch-when="blog" class="grid__item__wrapper grid__item__wrapper--{{card.subtype}}">
+        
+        <h2>
+            {{card.title}}
+        </h2>
+        <div class="grid__item__wrapper__content">
+            <p ng-bind-html="card.content"></p>
+
+            <ul class="grid__item__wrapper__content__links">
+                <li class="grid__item__wrapper__content__links__readmore">
+                    <a ng-href="/#/blog/{{card.id}}" ng-click="$root.select(card.id)">
+                        Read More
+                    </a>
+                </li>
+                <li class="grid__item__wrapper__content__links__link" ng-if="card.website">
+                    <a ng-href="{{card.website}}" target="_blank">
+                        Link to Article
+                    </a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+        
+    </div>
+</article>

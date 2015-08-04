@@ -1,0 +1,25 @@
+{
+    "title": "About me",
+    "content": "<p>I am an <em>experienced front and back end developer</em> specialised in taking projects from concept to completion, leading teams of developers and working directly with clients. Moved to the UK five years ago to pursue better career opportunities and take new challenges in a much more competitive market.</p><p>A self-proclaimed geek who loves technology and everything digital.</p><p>I have been working since I graduated from Uni. I have created many public and private websites, some of them showed below. I am willing to learn and adapt quickly to new environments.<br />Presently looking for a dynamic, ambitious, growing role where I can work with bigger teams and projects.</p>",
+    "workplaces": [
+        "<small>(09/2014 - Present)</small> &nbsp;-&nbsp; <strong>GameAccount Network:</strong> Front End Web Developer",
+        "<small>(06/2011 - 09/2014)</small> &nbsp;-&nbsp; <strong>24sq:</strong> Web Developer",
+        "<small>(12/2010 - 06/2011)</small> &nbsp;-&nbsp; <strong>Squiz:</strong> Implementation Specialist",
+        "<small>(09/2008 - 10/2010)</small> &nbsp;-&nbsp; <strong>W20:</strong> Web Developer"
+    ],
+    "interests": [
+        "Board games",
+        "Digital",
+        "Fantasy",
+        "Metal music",
+        "Opera and musicals",
+        "Pet rats",
+        "Psychology",
+        "Pole dancing",
+        "Statistics",
+        "Video games"
+    ],
+    "cv": [
+        ["Download my CV", "assets/pdf/cv_diogo.pdf"]
+    ]
+}

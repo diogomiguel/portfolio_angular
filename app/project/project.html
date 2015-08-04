@@ -1,0 +1,48 @@
+<section class="detailsview__wrapper" id="js-detailsview-wrapper">
+    <header>
+        <h2 class="detailsview__wrapper__header" id="js-detailsview-header" ng-bind-html="project.article.title"></h2>
+    </header>
+    <hr>
+    <a class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn" ng-href="/#" ng-click="$root.select()"></a>
+
+    
+
+    <div class="detailsview__wrapper__content">
+       
+
+         
+
+        <div class="detailsview__wrapper__description" id="js-detailsview-description">
+            <figure class="detailsview__wrapper__figure" id="js-detailsview-figure">
+                <a target="_blank" href="{{project.imageLink()}}">
+                    <img alt="Really Useful Theatres" ng-src="{{project.article.imagepath}}">
+                </a>
+            </figure>
+
+            <div ng-bind-html="project.article.description"></div>
+
+            <div class="clearfix"></div>
+
+            <hr>
+
+            <h3>Technologies</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__technologies">
+                    <li ng-repeat="technology in project.article.technologies">{{technology}}</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <ul class="detailsview__wrapper__links">
+                <li ng-repeat="link in project.article.links">
+                    <a class="detailsview__wrapper__links__link" href="{{link[1]}}" target="_blank">{{link[0]}}</a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>  
+</section>

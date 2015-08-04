@@ -1,0 +1,28 @@
+<section class="detailsview__wrapper" id="js-detailsview-wrapper">
+    <header>
+        <h2 class="detailsview__wrapper__header" id="js-detailsview-header" ng-bind-html="contact.article.title"></h2>
+    </header>
+
+    <hr>
+
+    <a class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn" ng-href="/#" ng-click="$root.select()"></a>
+
+
+    <div class="detailsview__wrapper__content">
+
+        <div class="detailsview__wrapper__description" id="js-detailsview-description">
+            <div ng-bind-html="contact.article.content"></div>
+
+            <hr>
+
+            <h3>Contact Details</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__contacts">
+                    <li ng-repeat="contact in contact.article.contacts" ng-bind-html="contact"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>  
+</section>

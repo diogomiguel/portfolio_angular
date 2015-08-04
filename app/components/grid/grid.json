@@ -1,0 +1,207 @@
+[
+    {
+        "id": "main",
+        "category": "main",
+        "content": "<p>I am an experienced <em>web developer</em> who has 6 years experience.</p><p>I currently work for one of the largest gaming company in the heart of London.</p><p>Here you'll find some of the projects I've worked on. Most of them from concept to deployment.</p>",
+        "image": "assets/imgs/logo.jpg",
+        "title": "Diogo Silva"
+    },
+
+    {
+        "id": "angularnew",
+        "category": "blog",
+        "content": "In order to improve my AngularJS skills, I decided to re-do the whole website in this technology...",
+        "technologies": ["AngularJS", "Compass", "Grunt", "npm", "SASS"],
+        "title": "New AngularJS Website",
+        "subtype": "news"
+    },
+
+
+
+    {
+        "id": "rut",
+        "category": "project",
+        "content": "Really Useful Theatres Group owns and operates six commercial theatres in the heart of London’s West End. The Group is wholly owned by Andrew Lloyd Webber.",
+        "image": "assets/imgs/rut/thumb.jpg",
+        "technologies": ["Expression Engine", "Grunt", "HTML5/CSS3", "JavaScript/jQuery", "Sass"],
+        "title": "Really Useful Theatres",
+        "website": "http://reallyusefultheatres.co.uk"
+    },
+
+
+
+    {
+        "id": "about",
+        "category": "about",
+        "title": "About me"
+    },
+
+    {
+        "id": "tindrum",
+        "category": "project",
+        "content": "Tin Drum is a small independent, full service music consultancy. I had the pleasure to built the redesign of their current website.",
+        "image": "assets/imgs/tindrum/thumb.jpg",
+        "technologies": ["Bower", "Grunt", "Perch CMS", "Responsive", "Yeoman"],
+        "title": "Tin Drum",
+        "website": "http://www.tindrummusic.co.uk"
+    },
+
+
+
+    {
+        "id": "club8",
+        "category": "project",
+        "content": "Club8 Casino is free to play simulated casino gaming website. The development of their mobile-only new website from the ground up, was my first big assignment as an employee of GameAccount Network.",
+        "image": "assets/imgs/club8/thumb.jpg",
+        "technologies": ["Compass", "Feature Detection", "Mercurial", "JSTL", "Responsive"],
+        "title": "Club8 Casino Online",
+        "website": "https://m.club8casino.com.au"
+    },
+        {
+        "id": "skills",
+        "category": "about",
+        "title": "Skills"
+    },
+    {
+        "id": "fsm",
+        "category": "project",
+        "content": "As their 6 years old was technically outdated and not optimised for smaller devices, they urgently needed a brand new built-from-scratch responsive website.",
+        "image": "assets/imgs/freestyle/thumb.jpg",
+        "technologies": ["Expression Engine", "Grunt", "HTML5/CSS3", "JavaScript/jQuery", "Responsive"],
+        "title": "FreeStyle Blood Glucose Meters",
+        "website": "https://abbottdiabetescare.co.uk"
+    },
+
+    {
+        "id": "fsi",
+        "category": "project",
+        "content": "A simple two-page website for the launch of Abbott Diabetes Care FreeStyle meter in Switzerland.",
+        "image": "assets/imgs/fsi/thumb.jpg",
+        "technologies": ["HTML/CSS", "JavaScript/jQuery", "Parallax", "PHP", "Zend"],
+        "title": "FreeStyle Insulinx Switzerland",
+        "website": "http://freestyleinsulinx.ch"
+    },
+
+    {
+        "id": "bmi",
+        "category": "blog",
+        "content": "After implementing the BMI Calculator custom module in a Expression Engine project, I decided to clean up the code and release it to the public as a free add-on...",
+        "technologies": ["Expression Engine", "PHP"],
+        "title": "BMI Calculator",
+        "website": "http://devot-ee.com/add-ons/body-mass-index-calculator",
+        "subtype": "plugin"
+    },
+
+
+
+    {
+        "id": "katereid",
+        "category": "project",
+        "content": "Award winning Director of Photography contacted me in order to update her Code Igniter based website. I did not only build new pages, amend bugs and improve the existing UI, but also came up with a strategy to improve the SEO of the website.",
+        "image": "assets/imgs/kate/thumb.jpg",
+        "technologies": ["CodeIgniter", "HTML5/CSS", "JavaScript/jQuery", "PHP", "SEO"],
+        "title": "Kate Reid",
+        "website": "http://www.katereiddop.com"
+    },
+
+
+
+    {
+        "id": "twentyfoursquare",
+        "category": "project",
+        "content": "As the agency was getting more and more visits from mobile devices and clients searching for responsive solutions, it became clear they needed a more compatible approach.",
+        "image": "assets/imgs/24sq/thumb.jpg",
+        "technologies": ["HTML5/CSS", "JavaScript/jQuery", "PHP", "Responsive"],
+        "title": "twentyfoursquare",
+        "website": "http://24sq.com"
+    },
+
+    {
+        "id": "contact",
+        "category": "about",
+        "title": "Contact me"
+    },
+
+    {
+        "id": "activa",
+        "category": "project",
+        "content": "I was approached with the challenge of building my first big mobile application that gave HCPs all this information at their finger tips.",
+        "image": "assets/imgs/activa/thumb.jpg",
+        "technologies": ["HTML5/CSS", "jQuery Mobile", "PhoneGap", "Sass", "xCode"],
+        "title": "Hosiery Selector",
+        "website": "http://www.activahealthcare.co.uk/hosiery-selector-sizer"
+    },
+
+    {
+        "id": "wct",
+        "category": "project",
+        "content": "Wound Care Today brings together UK and international media in one essential resource, offering a window to all that is going on in the world of wounds, and they needed a strong online presence.",
+        "image": "assets/imgs/wct/thumb.jpg",
+        "technologies": ["HTML5/CSS", "jQuery", "Objective C", "PHP", "Responsive"],
+        "title": "Wound Care Today",
+        "website": "http://woundcare-today.com"
+    },
+
+    {
+        "id": "conference2",
+        "category": "blog",
+        "content": "Building better experiences with responsive JavaScript<br><small>by <a href=\"#\" rel=\"author\">Jonathan Fielding</a></small>",
+        "title": "Web Meet-up",
+        "website": "http://www.meetup.com/londonweb/events/140671892",
+        "subtype": "conference"
+    },
+
+
+
+
+    {
+        "id": "pm",
+        "category": "project",
+        "content": "Paulo Melo, a friend from Uni times, got in touch asking me to develop his portfolio website.",
+        "image": "assets/imgs/pm/thumb.jpg",
+        "technologies": ["JavaScript/jQuery", "PHP", "Symfony"],
+        "title": "Paulo Melo Portfolio"
+    },
+
+
+
+    {
+        "id": "mfb",
+        "category": "project",
+        "content": "MFB is a specialist shipping law firm and I had the pleasure to do from scratch their new website.",
+        "image": "assets/imgs/mfb/thumb.jpg",
+        "technologies": ["CMS", "HTML5/CSS", "PHP"],
+        "title": "Paulo Melo Portfolio",
+        "website": "http://m-f-b.co.uk"
+    },
+
+    {
+        "id": "conference1",
+        "category": "blog",
+        "content": "Javascript Tools and Workflow<br><small>by <a href=\"#\" rel=\"author\">Jonathan Fielding</a></small>",
+        "title": "Web Meet-up",
+        "website": "http://www.meetup.com/londonajax/events/173263912",
+        "subtype": "conference"
+    },
+    
+    {
+        "id": "whitedesk",
+        "category": "project",
+        "content": "Web portfolio for a fellow web designer friend, built around 2010 in Flash and ActionScript 3.",
+        "image": "assets/imgs/whitedesk/thumb.jpg",
+        "technologies": ["ActionScript 3", "Flash"],
+        "title": "The White Desk",
+        "website": "http://thewhitedesk.com"
+    },
+
+    
+    {
+        "id": "gatracker",
+        "category": "blog",
+        "content": "Drop in solution which allows to track server-side events and data within Google Analytics.",
+        "technologies": ["Expression Engine", "Google Maps API", "PHP"],
+        "title": "GA Tracker",
+        "website": "http://devot-ee.com/add-ons/google-analytics-tracker",
+        "subtype": "plugin"
+    }
+]

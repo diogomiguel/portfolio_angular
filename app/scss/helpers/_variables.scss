@@ -1,0 +1,38 @@
+/**
+ * Variables to be used throughout the project
+ */
+
+// Fonts
+$exo2: "Exo 2", sans-serif;
+$montserrat: "Montserrat", sans-serif;
+$questrial: "Questrial", sans-serif;
+
+$base-font-size: 16px;
+
+
+// Colors
+$grey: #838689;
+$orange: #b38456;
+$firefly: #0d2533;
+$black: #000000;
+$white: #FFFFFF;
+$blue: #3f99ac;
+$green: #56a350;
+$yellow: #FFF67A;
+$red: #AC593F;
+
+
+// Miscs
+$images-path: "../imgs/";
+
+// Main Breakpoints
+$xl: min-width 1601px;
+$m: max-width 960px;
+$s: max-width 768px;
+$xs: max-width 480px;
+
+// Functions
+@function em($target, $context: $base-font-size) {
+	@if $target == 0 { @return 0 }
+	@return $target / $context + 0em;
+}

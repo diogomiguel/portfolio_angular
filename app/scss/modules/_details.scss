@@ -1,0 +1,288 @@
+/**
+ * Read more elements animations
+ */
+@import "compass/css3/animation";
+
+// To smooth anim fine tune max height per mediaquery
+$an-details-mh--l: 800px;
+$an-details-mh--xl: 1000px;
+$an-details-mh--m: 900px;
+$an-details-mh--s: 1000px;
+$an-details-mh--xs: 1200px;
+
+@include keyframes(detailsview--enter) {
+    from { 
+    	max-height: 0;
+    }
+    to {
+        max-height: $an-details-mh--l;       
+    }
+}
+
+
+@include keyframes(detailsview--leave) {
+    from { 
+    	max-height: $an-details-mh--l;
+
+    }
+    to {
+        max-height: 0;
+    }
+}
+
+@include breakpoint($xl) {
+	@include keyframes(detailsview--enter) {
+	    from { 
+	    	max-height: 0;
+	    }
+	    to {
+	        max-height: $an-details-mh--xl;      
+	    }
+	}
+	@include keyframes(detailsview--leave) {
+	    from { 
+	    	max-height: $an-details-mh--xl;
+
+	    }
+	    to {
+	        max-height: 0;
+	    }
+	}
+}
+
+@include breakpoint($m) {
+	@include keyframes(detailsview--enter) {
+	    from { 
+	    	max-height: 0;
+	    }
+	    to {
+	        max-height: $an-details-mh--m;      
+	    }
+	}
+	@include keyframes(detailsview--leave) {
+	    from { 
+	    	max-height: $an-details-mh--m;
+
+	    }
+	    to {
+	        max-height: 0;
+	    }
+	}
+}
+
+@include breakpoint($s) {
+	@include keyframes(detailsview--enter) {
+	    from { 
+	    	max-height: 0;
+	    }
+	    to {
+	        max-height: $an-details-mh--s;      
+	    }
+	}
+	@include keyframes(detailsview--leave) {
+	    from { 
+	    	max-height: $an-details-mh--s;
+
+	    }
+	    to {
+	        max-height: 0;
+	    }
+	}
+}
+
+@include breakpoint($xs) {
+	@include keyframes(detailsview--enter) {
+	    from { 
+	    	max-height: 0;
+	    }
+	    to {
+	        max-height: $an-details-mh--xs;      
+	    }
+	}
+	@include keyframes(detailsview--leave) {
+	    from { 
+	    	max-height: $an-details-mh--xs;
+
+	    }
+	    to {
+	        max-height: 0;
+	    }
+	}
+}
+/**
+ * Read more elements
+ */
+.detailsview{
+	width: auto;
+	position: relative;
+	background-color: $white;
+	overflow: hidden;
+	margin-bottom: 5px;
+
+	.detailsview__wrapper{
+		@include transition-property(opacity);
+		@include transition-duration(0.6s);
+		@include transition-timing-function(ease-out);
+		@include opacity(1);
+	}
+
+	@include breakpoint($xs) {
+		margin: 0 5px 5px;
+	}
+}
+.detailsview.ng-animate{
+	.detailsview__wrapper{
+
+		@include opacity(0);
+	}
+	
+}
+.detailsview.ng-enter{	
+	@include animation(detailsview--enter 1s ease-out);
+	background: url('../../bower_components/svg-loaders/svg-loaders/three-dots.svg') no-repeat center center $white;
+	background-size: 7.5% auto;
+}
+.detailsview.ng-leave{
+	@include animation(detailsview--leave 0.8s ease-out);
+	.detailsview__wrapper{
+		@include opacity(1);
+	}
+}
+.detailsview__wrapper{
+	padding: 1%;
+	width: auto;
+	h2{
+		font-size: em(26px);
+
+		@include breakpoint($xs) {
+			padding-right: 10%;
+		}
+	}
+	hr{
+		height: 6px;
+		width: 100%;
+		background: url($images-path + 'border-img.png') repeat-x;
+		content: "";
+		display: block;
+		margin-bottom: em(8px);
+		border: 0 none;
+		margin-top: 0;
+	}
+
+	@include breakpoint($m) {
+		padding: 3%;
+	}
+}
+.detailsview__wrapper--invisible{
+	visibility: hidden;
+}
+.detailsview__wrapper__closebtn{
+	width: 31px;
+	height: 31px;
+	cursor: pointer;
+	background: url($images-path + "icons-big.png") left -43px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background-color: rgba($white, 0.5);
+	@include transition-duration('0.5s');
+	&:hover{
+
+		@include opacity(0.5);
+	}
+}
+.detailsview__wrapper__figure{
+	float: left;
+	margin: 0 20px 10px 0;
+	width: 30%;
+	max-width: 570px;
+	min-width: 370px;
+	img{
+		
+		width: 100%;
+	}
+
+	@include breakpoint($m) {
+		display: none;
+	}
+}
+.detailsview__wrapper__content{
+	
+	
+	ul{
+		float: left;
+	
+		li{
+			font-size: em(14px);
+			float: left;
+			width: 50%;
+			min-width: 200px;
+			word-wrap: break-word;
+
+			@include breakpoint($m) {
+				float: none;
+				width: auto;
+			}
+		}
+		&.detailsview__wrapper__links{
+			margin: 0;
+			padding: 0;	
+			display: inline-block;
+			float: none;
+			li{
+				float: none;
+				width: 100%;
+				font-size: em(14px);
+				padding: 0;
+				list-style: none;
+				a{
+					background: url($images-path + "arrow.gif") no-repeat 0 center;
+					padding-left: em(23px);
+					@include transition-property(none);
+				}
+			}
+		}
+		&.detailsview__wrapper__technologies{
+			margin-bottom: em(10px);
+		}
+		&.simple{
+			
+			display: block;
+			float: none;
+			margin-bottom:1em;
+			li{
+				float: none;
+				width: 100%;
+			}
+		}
+
+		&.detailsview__wrapper__contacts {
+			li {
+				min-width: 250px;
+			}
+		}
+	}
+}
+.detailsview__wrapper__header{
+	margin-bottom: em(8px, 22px);
+}
+.detailsview__wrapper__description{
+	
+	width: auto;
+
+	h3{
+		float: left;
+		padding-right: em(20px, 18px);
+
+		@include breakpoint($xs) {
+			margin-bottom: 10px;
+		}
+	}
+
+	
+}
+
+
+.detailsview__wrapper__fakeclearcontainer{
+	display: table;
+}

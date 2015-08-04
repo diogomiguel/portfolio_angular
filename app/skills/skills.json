@@ -1,0 +1,37 @@
+{
+    "title": "My skills",
+    "content": "<p>Always learning and always keen to work with new technologies and tools. I’m an all rounder with both front end and back end development skills. My work has been primarily focussed on:</p>",
+    
+    "frontend": [
+        "AngularJS (novice-ish)",
+        "Ajax",
+        "CSS and SASS",
+        "(x)HTML(5)",
+        "JavaScript",
+        "jQuery",
+        "jQuery Mobile",
+        "JSTL",
+        "Sencha Touch"
+    ],
+    "backend": [
+        "CodeIgniter",
+        "Expression Engine",
+        "MySQL",
+        "Perch CMS",
+        "PHP",
+        "Ruby on Rails (it's been a long time!)",
+        "Symfony",
+        "Wordpress",
+        "Zend"
+    ],
+    "tools": [
+        "Bower",
+        "Dandelion (automated deployment)",
+        "Git/SVN",
+        "Grunt",
+        "Use-init",
+        "Vagrant",
+        "xCode",
+        "Yeoman"
+    ]
+}

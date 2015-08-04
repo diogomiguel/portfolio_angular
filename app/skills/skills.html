@@ -1,0 +1,47 @@
+<section class="detailsview__wrapper" id="js-detailsview-wrapper">
+    <header>
+        <h2 class="detailsview__wrapper__header" id="js-detailsview-header">{{skills.article.title}}</h2>
+    </header>
+    <hr>
+    <a class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn" ng-href="/#" ng-click="$root.select()"></a>
+
+    
+
+    <div class="detailsview__wrapper__content">
+       
+        <div class="detailsview__wrapper__description" id="js-detailsview-description">
+            <div ng-bind-html="skills.article.content"></div>
+
+            <hr>
+
+            <h3>Front End Skills</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__frontend">
+                    <li ng-repeat="skill in skills.article.frontend">{{skill}}</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h3>Back End Skills</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__backend">
+                    <li ng-repeat="skill in skills.article.backend">{{skill}}</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h3>Tools and Miscs</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__tools">
+                    <li ng-repeat="skill in skills.article.tools">{{skill}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>  
+</section>

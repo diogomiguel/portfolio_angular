@@ -1,0 +1,25 @@
+<section class="detailsview__wrapper" id="js-detailsview-wrapper">
+    <header>
+        <h2 class="detailsview__wrapper__header" id="js-detailsview-header" ng-bind-html="blog.article.title"></h2>
+    </header>
+
+    <hr>
+    
+    <a class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn" ng-href="/#" ng-click="$root.select()"></a>
+
+    
+
+    <div class="detailsview__wrapper__content">
+        <div class="detailsview__wrapper__description" id="js-detailsview-description">
+            <div ng-bind-html="blog.article.content"></div>
+            <hr>
+            <ul class="detailsview__wrapper__links">
+                <li ng-repeat="link in blog.article.links">
+                    <a class="detailsview__wrapper__links__link" href="{{link[1]}}" target="_blank">{{link[0]}}</a>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>  
+</section>

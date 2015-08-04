@@ -1,0 +1,48 @@
+<section class="detailsview__wrapper" id="js-detailsview-wrapper">
+    <header>
+        <h2 class="detailsview__wrapper__header" id="js-detailsview-header" ng-bind-html="about.article.title"></h2>
+    </header>
+
+    <hr>
+
+    <a class="detailsview__wrapper__closebtn" id="js-detailsview-closebtn" ng-href="/#" ng-click="$root.select()"></a>
+
+    
+    <div class="detailsview__wrapper__content">
+        <div class="detailsview__wrapper__description" id="js-detailsview-description">
+            <div ng-bind-html="about.article.content"></div>
+
+
+            <hr>
+
+            <h3>Workplaces</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__workplaces">
+                    <li ng-repeat="workplace in about.article.workplaces" ng-bind-html="workplace"></li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <h3>Other Interests</h3>
+
+            <div class="detailsview__wrapper__fakeclearcontainer">
+                <ul class="detailsview__wrapper__interests">
+                    <li ng-repeat="interest in about.article.interests">{{interest}}</li>
+                </ul>
+            </div>
+
+            <hr>
+
+            <ul class="detailsview__wrapper__links">
+                <li ng-repeat="cvinfo in about.article.cv">
+                    <a class="detailsview__wrapper__links__link" ng-href="{{cvinfo[1]}}" target="_blank">{{cvinfo[0]}}</a>
+                </li>
+            </ul>
+
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <div class="clearfix"></div>  
+</section>

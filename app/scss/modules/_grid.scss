@@ -1,0 +1,360 @@
+/**
+ * Grid and it's elements are defined here.
+ */
+.deckgrid[deckgrid]::before {
+    /* Specifies that the grid should have a maximum of 4 columns. Each column will have the classes 'column' and 'column-1-4' */
+    content: '4 .column.column-1-4';
+    font-size: 0; /* See https://github.com/akoenig/angular-deckgrid/issues/14#issuecomment-35728861 */
+    visibility: hidden;
+
+    @include breakpoint($xl) {
+		content: '5 .column.column-1-5';
+		
+    }
+
+    @include breakpoint($m) {
+    	content: '2 .column.column-1-2';
+    }
+
+    @include breakpoint($s) {
+    	content: '2 .column.column-1-2';
+    }
+
+    @include breakpoint($xs) {
+    	content: '1 .column.column-1-1';
+    }
+}
+
+.deckgrid .column {
+    float: left;
+}
+.deckgrid .column-1-5 {
+	width: 20%;
+}
+.deckgrid .column-1-4 {
+    width: 25%;
+}
+.deckgrid .column-1-2 {
+    width: 50%;
+}
+.deckgrid .column-1-1 {
+    width: 100%;
+}
+
+.gridmask{
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.grid__item{
+	position: relative;
+	overflow:hidden;
+}
+
+.deckgrid .column:first-child .grid__item__wrapper {
+	margin-left: 5px;
+}
+.grid__item--active{
+	@include opacity(0.5);
+	@include transition-duration(0.5s);
+	@include transition-property(opacity);
+
+	&:after{
+		display: block;
+		content: "";
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+}
+
+.grid__item--animation{
+	@include transition-duration(0.5s);
+}
+.grid__item__wrapper{
+	padding: 5px 5px 20px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+	width: auto;
+	background-color: $white;
+
+	p{
+		font-size: em(12px);
+
+		@include breakpoint($xs) {
+			font-size: em(16px);
+		}
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	}
+	li{
+		float: left;
+		margin: 0;
+	}
+}
+.grid__item__wrapper__content{
+	padding: 0 em(10px);
+}
+
+.grid__item__wrapper--main{
+	padding: em(40px) em(20px) em(32px);
+	header{
+		margin-bottom: em(14px);
+	}
+	p{
+		font-size: em(15px);
+		font-family: $questrial;
+		line-height: em(20px, 15px);
+		text-align: center;
+		padding-bottom: em(8px, 15px);
+	}
+}
+.grid__item__wrapper__logo{
+	width: 100%;
+	height: 27px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: em(14px, 32px);
+
+	img{
+		max-width: 257px;
+		margin: 0 auto;
+		display: block;
+		width: 100%;
+	}
+	span{
+		text-indent: -9999px;
+		display: block;
+	}
+}
+
+.grid__item__wrapper--project{
+
+	h2{
+		color: $orange;
+		margin: em(8px, 22px) em(10px, 22px) em(8px, 22px);
+		padding-bottom: em(8px, 22px);
+		border-bottom: 1px solid rgba($grey, 0.5);
+	}
+	figure{
+		display: block;
+		overflow: hidden;
+		position: relative;
+		cursor: pointer;
+		&:hover .grid__item__rollover{
+			top: 0;
+			
+		}
+		
+		
+	}
+	img{
+		width:100%;
+	}
+	p{
+		color: $firefly;
+	}
+}
+ul.grid__item__wrapper__content__technologies{
+	margin-bottom: em(8px);
+	float: left;
+	width: 100%;
+	li {
+		margin-right: em(8px, 11px);
+		font-size: em(11px);
+		margin-bottom: em(8px, 11px);
+		color: $white;
+		padding: em(3px, 11px) em(10px, 11px);
+		background-color: rgba($black, 0.3);
+		
+		@include border-radius(3px);
+	}
+}
+.grid__item__wrapper__content__links{
+	li{
+		margin-bottom: 0;
+		font-size: em(11px);
+		margin-right: em(16px, 11px);
+
+		@include breakpoint($xs) {
+			font-size: em(14px);
+		}
+	}
+	a{
+		background: url($images-path + "icons-small.png") no-repeat;
+		height: 15px;
+		display: block;
+		line-height: em(12px,11px);
+	}
+}
+.grid__item__wrapper__content__links__readmore{
+	a{
+		padding-left: 16px;
+		background-position: 0 0;
+
+		@include breakpoint($xs) {
+			padding-left: 19px;
+		}
+	}
+}
+.grid__item__wrapper__content__links__link{
+	a{
+		padding-left: 19px;
+		background-position: 0 -13px;
+	}
+}
+
+.grid__item__wrapper--about{
+	background-color: $orange;
+	height: em(190px);
+	padding-bottom: 0;
+	position: relative;
+	overflow: hidden;
+	h2 {
+		vertical-align: middle;
+		text-align: center;
+		height: 100%;
+		
+		display: table-cell;
+		color: $white;
+		margin: 0;
+		text-transform: uppercase;
+		font-family: $montserrat;
+		font-weight: bold;
+		text-align: center;
+		font-size: em(36px, 22px);
+		line-height: em(40px, 36px);
+	}
+
+	&:hover .grid__item__rollover{
+			top: 0;
+			
+	}
+}
+.grid__item__wrapper__header{
+	border-bottom: 0 none;
+	height: 100%;
+	display: table;
+	width: 100%;
+}
+
+.grid__item__wrapper--plugin{
+	@extend .grid__item__wrapper--project;
+	background-color: $blue;
+	padding-top: 15px;
+
+	h2{
+		color: $white;
+		border-bottom-color: rgba($white, 0.5);
+	}
+	p{
+		color: $white;
+	}
+	a{
+		color: $white;
+
+		&:hover{
+			color: $firefly;
+		}
+	}
+
+	.grid__item__wrapper__content__links__readmore a{
+		background-position: 0 -30px;
+	}
+
+	.grid__item__wrapper__content__links__link a{
+		background-position: 0 -43px;
+	}
+}
+.grid__item__wrapper--news {
+	@extend .grid__item__wrapper--plugin;
+	background-color: $red;
+}
+.grid__item__wrapper--conference{
+	@extend .grid__item__wrapper--plugin;
+	background-color: $green;
+
+	p{
+		font-size: em(16px);
+		padding-bottom: em(14px, 16px);
+	}
+}
+
+.grid__item__rollover{
+	position: absolute;
+	top: 100%;
+	width: 100%;
+	height: 100%;
+	background-color: rgba($black, 0.8); 
+	content: " ";
+	left: 0;
+	@include transition-property(top);
+	@include transition-duration(0.5s);
+	@include transition-timing-function(ease-out);
+
+	a{
+		
+		height: 100%;
+		display: block;
+		font-size: em(18px);
+		font-family: $montserrat;
+		text-align: center;
+		top: 0;
+		position: relative;
+		color: $white;
+		width: 100%;
+		top: 52.5%;
+		&:after{
+			width: 43px;
+			height: 43px;
+			margin-top: -45px;
+			content: "";
+			position: absolute;
+			background: url($images-path + "icons-big.png") no-repeat center 0;
+			left: 50%;
+			margin-left: -21.5px;
+		}
+		&:hover{
+			text-decoration: none;
+		}
+		&:hover:after{
+			@include opacity(0.8);
+		}
+		
+	}
+
+	@include breakpoint($xs) {
+		position: absolute;
+		top: 0;
+		background-color: transparent; 
+		@include transition-property(none);
+
+		a{
+			top: 0;
+			content: "";
+			text-indent: -9999px;
+			&:after{
+				display: none;
+
+			}
+		}
+	}
+}
+
+//-----------------------------------------------------------------------
+// Modernizr specific
+//-----------------------------------------------------------------------
+
+
+.touch{
+	.grid__item__rollover{
+		top: 0;
+		@include opacity(0);
+
+	}
+}
