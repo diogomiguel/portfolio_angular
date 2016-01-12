@@ -7,6 +7,17 @@
         "title": "Diogo Silva"
     },
 
+    
+    {
+        "id": "aceplay",
+        "category": "project",
+        "content": "",
+        "image": "assets/imgs/aceplay/thumb.jpg",
+        "technologies": ["Compass", "Feature Detection", "Mercurial", "JSTL", "RWD"],
+        "title": "acePLAYcasino.com",
+        "website": "http://aceplaycasino.com/"
+    },
+
     {
         "id": "angularnew",
         "category": "blog",
@@ -16,7 +27,31 @@
         "subtype": "news"
     },
 
+    {
+        "id": "sanmanuel",
+        "category": "project",
+        "content": "",
+        "image": "assets/imgs/sanmanuel/thumb.jpg",
+        "technologies": ["Compass", "Feature Detection", "Grunt", "JSTL", "RWD"],
+        "title": "San Manuel Casino",
+        "website": "https://play.sanmanuel.com/"
+    },
 
+    {
+        "id": "about",
+        "category": "about",
+        "title": "About me"
+    },
+
+    {
+        "id": "maryland",
+        "category": "project",
+        "content": "",
+        "image": "assets/imgs/maryland/thumb.jpg",
+        "technologies": ["Compass", "Feature Detection", "JSTL", "RWD", "Susy"],
+        "title": "Live! Social Casino (mobile)",
+        "website": "https://m.livecasino.social/"
+    },
 
     {
         "id": "rut",
@@ -28,46 +63,38 @@
         "website": "http://reallyusefultheatres.co.uk"
     },
 
-
-
-    {
-        "id": "about",
-        "category": "about",
-        "title": "About me"
-    },
-
     {
         "id": "tindrum",
         "category": "project",
         "content": "Tin Drum is a small independent, full service music consultancy. I had the pleasure to built the redesign of their current website.",
         "image": "assets/imgs/tindrum/thumb.jpg",
-        "technologies": ["Bower", "Grunt", "Perch CMS", "Responsive", "Yeoman"],
+        "technologies": ["Bower", "Grunt", "Perch CMS", "RWD", "Yeoman"],
         "title": "Tin Drum",
         "website": "http://www.tindrummusic.co.uk"
     },
 
-
+    {
+        "id": "skills",
+        "category": "about",
+        "title": "Skills"
+    },
 
     {
         "id": "club8",
         "category": "project",
         "content": "Club8 Casino is free to play simulated casino gaming website. The development of their mobile-only new website from the ground up, was my first big assignment as an employee of GameAccount Network.",
         "image": "assets/imgs/club8/thumb.jpg",
-        "technologies": ["Compass", "Feature Detection", "Mercurial", "JSTL", "Responsive"],
+        "technologies": ["Compass", "Feature Detection", "JSTL", "RWD", "Susy"],
         "title": "Club8 Casino Online",
         "website": "https://m.club8casino.com.au"
     },
-        {
-        "id": "skills",
-        "category": "about",
-        "title": "Skills"
-    },
+        
     {
         "id": "fsm",
         "category": "project",
         "content": "As their 6 years old was technically outdated and not optimised for smaller devices, they urgently needed a brand new built-from-scratch responsive website.",
         "image": "assets/imgs/freestyle/thumb.jpg",
-        "technologies": ["Expression Engine", "Grunt", "HTML5/CSS3", "JavaScript/jQuery", "Responsive"],
+        "technologies": ["Expression Engine", "Grunt", "HTML5/CSS3", "JavaScript/jQuery", "RWD"],
         "title": "FreeStyle Blood Glucose Meters",
         "website": "https://abbottdiabetescare.co.uk"
     },
@@ -111,7 +138,7 @@
         "category": "project",
         "content": "As the agency was getting more and more visits from mobile devices and clients searching for responsive solutions, it became clear they needed a more compatible approach.",
         "image": "assets/imgs/24sq/thumb.jpg",
-        "technologies": ["HTML5/CSS", "JavaScript/jQuery", "PHP", "Responsive"],
+        "technologies": ["HTML5/CSS", "JavaScript/jQuery", "PHP", "RWD"],
         "title": "twentyfoursquare",
         "website": "http://24sq.com"
     },
@@ -137,7 +164,7 @@
         "category": "project",
         "content": "Wound Care Today brings together UK and international media in one essential resource, offering a window to all that is going on in the world of wounds, and they needed a strong online presence.",
         "image": "assets/imgs/wct/thumb.jpg",
-        "technologies": ["HTML5/CSS", "jQuery", "Objective C", "PHP", "Responsive"],
+        "technologies": ["HTML5/CSS", "jQuery", "Objective C", "PHP", "RWD"],
         "title": "Wound Care Today",
         "website": "http://woundcare-today.com"
     },
@@ -152,26 +179,13 @@
     },
 
 
-
-
-    {
-        "id": "pm",
-        "category": "project",
-        "content": "Paulo Melo, a friend from Uni times, got in touch asking me to develop his portfolio website.",
-        "image": "assets/imgs/pm/thumb.jpg",
-        "technologies": ["JavaScript/jQuery", "PHP", "Symfony"],
-        "title": "Paulo Melo Portfolio"
-    },
-
-
-
     {
         "id": "mfb",
         "category": "project",
         "content": "MFB is a specialist shipping law firm and I had the pleasure to do from scratch their new website.",
         "image": "assets/imgs/mfb/thumb.jpg",
         "technologies": ["CMS", "HTML5/CSS", "PHP"],
-        "title": "Paulo Melo Portfolio",
+        "title": "MFB",
         "website": "http://m-f-b.co.uk"
     },
 

@@ -636,10 +636,15 @@ h1, h2, h3 {
   position: absolute;
 }
 
+/* line 34, ../../scss/page/_main.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 /* ==========================================================================
    Loading
    ========================================================================== */
-/* line 39, ../../scss/page/_main.scss */
+/* line 42, ../../scss/page/_main.scss */
 .loading__bg {
   display: none;
   position: fixed;
@@ -649,7 +654,7 @@ h1, h2, h3 {
   background-color: transparent;
 }
 
-/* line 47, ../../scss/page/_main.scss */
+/* line 50, ../../scss/page/_main.scss */
 .loading__bg--active {
   display: block;
   background-color: rgba(0, 0, 0, 0.5);
@@ -658,7 +663,7 @@ h1, h2, h3 {
   -webkit-transition-duration: "0.5s";
   transition-duration: "0.5s";
 }
-/* line 52, ../../scss/page/_main.scss */
+/* line 55, ../../scss/page/_main.scss */
 .loading__bg--active .loading__bg__loader {
   width: 42px;
   height: 42px;
@@ -666,7 +671,7 @@ h1, h2, h3 {
   margin-top: -21px;
 }
 
-/* line 59, ../../scss/page/_main.scss */
+/* line 62, ../../scss/page/_main.scss */
 .loading__bg__loader {
   background: url("../imgs/ourwork-loader.gif") center center no-repeat #FFFFFF;
   width: 0;
@@ -681,7 +686,7 @@ h1, h2, h3 {
   border-radius: 5px;
 }
 
-/* line 70, ../../scss/page/_main.scss */
+/* line 73, ../../scss/page/_main.scss */
 a.backtop {
   width: 100%;
   clear: both;
@@ -698,7 +703,7 @@ a.backtop {
 }
 
 @media only screen and (max-width: 480px) {
-  /* line 85, ../../scss/page/_main.scss */
+  /* line 88, ../../scss/page/_main.scss */
   a.backtop {
     display: block;
   }
@@ -1471,7 +1476,90 @@ ul.grid__item__wrapper__content__technologies li {
   }
 }
 
+/* line 352, ../../scss/modules/_grid.scss */
+.column.ng-enter {
+  -moz-animation: columnEnter 1s forwards;
+  -webkit-animation: columnEnter 1s forwards;
+  animation: columnEnter 1s forwards;
+}
 /* line 355, ../../scss/modules/_grid.scss */
+.column.ng-enter > div {
+  -moz-animation: cardEnter 0.75s forwards;
+  -webkit-animation: cardEnter 0.75s forwards;
+  animation: cardEnter 0.75s forwards;
+}
+
+/* line 360, ../../scss/modules/_grid.scss */
+.column.ng-leave {
+  display: none;
+}
+/* line 362, ../../scss/modules/_grid.scss */
+.column.ng-leave > div {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+
+@-moz-keyframes columnEnter {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes columnEnter {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes columnEnter {
+  from {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes cardEnter {
+  from {
+    -moz-transform: scale3d(0.2, 0.2, 0.2);
+    transform: scale3d(0.2, 0.2, 0.2);
+  }
+  100% {
+    -moz-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes cardEnter {
+  from {
+    -webkit-transform: scale3d(0.2, 0.2, 0.2);
+    transform: scale3d(0.2, 0.2, 0.2);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes cardEnter {
+  from {
+    -moz-transform: scale3d(0.2, 0.2, 0.2);
+    -ms-transform: scale3d(0.2, 0.2, 0.2);
+    -webkit-transform: scale3d(0.2, 0.2, 0.2);
+    transform: scale3d(0.2, 0.2, 0.2);
+  }
+  100% {
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+/* line 392, ../../scss/modules/_grid.scss */
 .touch .grid__item__rollover {
   top: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);

@@ -19,14 +19,14 @@ config(['$routeProvider', function($routeProvider) {
   );
 }])
 
-.run(['$rootScope', '$location', 'smoothScroll', function($rootScope, $location, smoothScroll) {
+.run(['$rootScope', '$location', '$animate', 'smoothScroll', function($rootScope, $location, $animate, smoothScroll) {
     var curPath = $location.path();
     var scrollToDetailsOptions = {
       duration: 600,
       easing: 'easeInOutQuad'
     };
     var detailsElem = document.getElementById('js-detailsview');
-
+    
     // Set active class Default
     $rootScope.selected = curPath.substring(curPath.lastIndexOf('/') + 1);
 

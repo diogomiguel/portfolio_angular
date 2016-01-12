@@ -347,6 +347,43 @@ ul.grid__item__wrapper__content__technologies{
 }
 
 //-----------------------------------------------------------------------
+// Filter animate
+//-----------------------------------------------------------------------
+.column.ng-enter {
+	@include animation(columnEnter 1s forwards);
+
+	> div {
+		@include animation(cardEnter 0.75s forwards);
+	}
+}
+
+.column.ng-leave {
+	display: none;
+	> div {
+		@include transform(none);
+	}
+}
+
+@include keyframes(columnEnter) {
+    from {
+        opacity: 0;
+    }
+    100% {
+    	opacity: 1;
+
+    }
+}
+@include keyframes(cardEnter) {
+    from {
+        @include transform(scale3d(.2, .2, .2));
+    }
+    100% {
+        @include transform(scale3d(1, 1, 1));
+
+    }
+}
+
+//-----------------------------------------------------------------------
 // Modernizr specific
 //-----------------------------------------------------------------------
 
