@@ -1232,40 +1232,41 @@ a.backtop {
   display: block;
 }
 
-/* line 138, ../../scss/modules/_grid.scss */
+/* line 137, ../../scss/modules/_grid.scss */
+.grid__item__wrapper--figure figure {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+/* line 142, ../../scss/modules/_grid.scss */
+.grid__item__wrapper--figure figure:hover .grid__item__rollover {
+  top: 0;
+}
+/* line 149, ../../scss/modules/_grid.scss */
+.grid__item__wrapper--figure img {
+  width: 100%;
+}
+
+/* line 155, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--project h2, .grid__item__wrapper--plugin h2, .grid__item__wrapper--news h2, .grid__item__wrapper--conference h2 {
   color: #b38456;
   margin: 0.36364em 0.45455em 0.36364em;
   padding-bottom: 0.36364em;
   border-bottom: 1px solid rgba(131, 134, 137, 0.5);
 }
-/* line 144, ../../scss/modules/_grid.scss */
-.grid__item__wrapper--project figure, .grid__item__wrapper--plugin figure, .grid__item__wrapper--news figure, .grid__item__wrapper--conference figure {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  cursor: pointer;
-}
-/* line 149, ../../scss/modules/_grid.scss */
-.grid__item__wrapper--project figure:hover .grid__item__rollover, .grid__item__wrapper--plugin figure:hover .grid__item__rollover, .grid__item__wrapper--news figure:hover .grid__item__rollover, .grid__item__wrapper--conference figure:hover .grid__item__rollover {
-  top: 0;
-}
-/* line 156, ../../scss/modules/_grid.scss */
-.grid__item__wrapper--project img, .grid__item__wrapper--plugin img, .grid__item__wrapper--news img, .grid__item__wrapper--conference img {
-  width: 100%;
-}
-/* line 159, ../../scss/modules/_grid.scss */
+/* line 162, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--project p, .grid__item__wrapper--plugin p, .grid__item__wrapper--news p, .grid__item__wrapper--conference p {
   color: #0d2533;
 }
 
-/* line 163, ../../scss/modules/_grid.scss */
+/* line 166, ../../scss/modules/_grid.scss */
 ul.grid__item__wrapper__content__technologies {
   margin-bottom: 0.5em;
   float: left;
   width: 100%;
 }
-/* line 167, ../../scss/modules/_grid.scss */
+/* line 170, ../../scss/modules/_grid.scss */
 ul.grid__item__wrapper__content__technologies li {
   margin-right: 0.72727em;
   font-size: 0.6875em;
@@ -1278,19 +1279,19 @@ ul.grid__item__wrapper__content__technologies li {
   border-radius: 3px;
 }
 
-/* line 179, ../../scss/modules/_grid.scss */
+/* line 182, ../../scss/modules/_grid.scss */
 .grid__item__wrapper__content__links li {
   margin-bottom: 0;
   font-size: 0.6875em;
   margin-right: 1.45455em;
 }
 @media (max-width: 480px) {
-  /* line 179, ../../scss/modules/_grid.scss */
+  /* line 182, ../../scss/modules/_grid.scss */
   .grid__item__wrapper__content__links li {
     font-size: 0.875em;
   }
 }
-/* line 188, ../../scss/modules/_grid.scss */
+/* line 191, ../../scss/modules/_grid.scss */
 .grid__item__wrapper__content__links a {
   background: url("../imgs/icons-small.png") no-repeat;
   height: 15px;
@@ -1298,25 +1299,25 @@ ul.grid__item__wrapper__content__technologies li {
   line-height: 1.09091em;
 }
 
-/* line 196, ../../scss/modules/_grid.scss */
+/* line 199, ../../scss/modules/_grid.scss */
 .grid__item__wrapper__content__links__readmore a {
   padding-left: 16px;
   background-position: 0 0;
 }
 @media (max-width: 480px) {
-  /* line 196, ../../scss/modules/_grid.scss */
+  /* line 199, ../../scss/modules/_grid.scss */
   .grid__item__wrapper__content__links__readmore a {
     padding-left: 19px;
   }
 }
 
-/* line 206, ../../scss/modules/_grid.scss */
+/* line 209, ../../scss/modules/_grid.scss */
 .grid__item__wrapper__content__links__link a {
   padding-left: 19px;
   background-position: 0 -13px;
 }
 
-/* line 212, ../../scss/modules/_grid.scss */
+/* line 215, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--about {
   background-color: #b38456;
   height: 11.875em;
@@ -1324,7 +1325,7 @@ ul.grid__item__wrapper__content__technologies li {
   position: relative;
   overflow: hidden;
 }
-/* line 218, ../../scss/modules/_grid.scss */
+/* line 221, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--about h2 {
   vertical-align: middle;
   text-align: center;
@@ -1339,12 +1340,20 @@ ul.grid__item__wrapper__content__technologies li {
   font-size: 1.63636em;
   line-height: 1.11111em;
 }
-/* line 234, ../../scss/modules/_grid.scss */
+/* line 237, ../../scss/modules/_grid.scss */
+.grid__item__wrapper--about--skills {
+  background-color: #a2c746;
+}
+/* line 240, ../../scss/modules/_grid.scss */
+.grid__item__wrapper--about--contact {
+  background-color: #da6868;
+}
+/* line 244, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--about:hover .grid__item__rollover {
   top: 0;
 }
 
-/* line 239, ../../scss/modules/_grid.scss */
+/* line 249, ../../scss/modules/_grid.scss */
 .grid__item__wrapper__header {
   border-bottom: 0 none;
   height: 100%;
@@ -1352,53 +1361,43 @@ ul.grid__item__wrapper__content__technologies li {
   width: 100%;
 }
 
-/* line 246, ../../scss/modules/_grid.scss */
+/* line 256, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin, .grid__item__wrapper--news, .grid__item__wrapper--conference {
-  background-color: #3f99ac;
-  padding-top: 15px;
+  background-color: #51b6b0;
 }
-/* line 251, ../../scss/modules/_grid.scss */
+/* line 260, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin h2, .grid__item__wrapper--news h2, .grid__item__wrapper--conference h2 {
   color: #FFFFFF;
   border-bottom-color: rgba(255, 255, 255, 0.5);
 }
-/* line 255, ../../scss/modules/_grid.scss */
+/* line 264, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin p, .grid__item__wrapper--news p, .grid__item__wrapper--conference p {
   color: #FFFFFF;
 }
-/* line 258, ../../scss/modules/_grid.scss */
+/* line 267, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin a, .grid__item__wrapper--news a, .grid__item__wrapper--conference a {
   color: #FFFFFF;
 }
-/* line 261, ../../scss/modules/_grid.scss */
+/* line 270, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin a:hover, .grid__item__wrapper--news a:hover, .grid__item__wrapper--conference a:hover {
   color: #0d2533;
 }
-/* line 266, ../../scss/modules/_grid.scss */
+/* line 275, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin .grid__item__wrapper__content__links__readmore a, .grid__item__wrapper--news .grid__item__wrapper__content__links__readmore a, .grid__item__wrapper--conference .grid__item__wrapper__content__links__readmore a {
   background-position: 0 -30px;
 }
-/* line 270, ../../scss/modules/_grid.scss */
+/* line 279, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--plugin .grid__item__wrapper__content__links__link a, .grid__item__wrapper--news .grid__item__wrapper__content__links__link a, .grid__item__wrapper--conference .grid__item__wrapper__content__links__link a {
   background-position: 0 -43px;
 }
 
-/* line 274, ../../scss/modules/_grid.scss */
-.grid__item__wrapper--news {
-  background-color: #AC593F;
-}
-
-/* line 278, ../../scss/modules/_grid.scss */
-.grid__item__wrapper--conference {
-  background-color: #56a350;
-}
-/* line 282, ../../scss/modules/_grid.scss */
+/* line 288, ../../scss/modules/_grid.scss */
 .grid__item__wrapper--conference p {
   font-size: 1em;
   padding-bottom: 0.875em;
 }
 
-/* line 288, ../../scss/modules/_grid.scss */
+/* line 294, ../../scss/modules/_grid.scss */
 .grid__item__rollover {
   position: absolute;
   top: 100%;
@@ -1420,7 +1419,7 @@ ul.grid__item__wrapper__content__technologies li {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
-/* line 300, ../../scss/modules/_grid.scss */
+/* line 306, ../../scss/modules/_grid.scss */
 .grid__item__rollover a {
   height: 100%;
   display: block;
@@ -1433,7 +1432,7 @@ ul.grid__item__wrapper__content__technologies li {
   width: 100%;
   top: 52.5%;
 }
-/* line 312, ../../scss/modules/_grid.scss */
+/* line 318, ../../scss/modules/_grid.scss */
 .grid__item__rollover a:after {
   width: 43px;
   height: 43px;
@@ -1444,17 +1443,17 @@ ul.grid__item__wrapper__content__technologies li {
   left: 50%;
   margin-left: -21.5px;
 }
-/* line 322, ../../scss/modules/_grid.scss */
+/* line 328, ../../scss/modules/_grid.scss */
 .grid__item__rollover a:hover {
   text-decoration: none;
 }
-/* line 325, ../../scss/modules/_grid.scss */
+/* line 331, ../../scss/modules/_grid.scss */
 .grid__item__rollover a:hover:after {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   opacity: 0.8;
 }
 @media (max-width: 480px) {
-  /* line 288, ../../scss/modules/_grid.scss */
+  /* line 294, ../../scss/modules/_grid.scss */
   .grid__item__rollover {
     position: absolute;
     top: 0;
@@ -1464,36 +1463,36 @@ ul.grid__item__wrapper__content__technologies li {
     -webkit-transition-property: none;
     transition-property: none;
   }
-  /* line 337, ../../scss/modules/_grid.scss */
+  /* line 343, ../../scss/modules/_grid.scss */
   .grid__item__rollover a {
     top: 0;
     content: "";
     text-indent: -9999px;
   }
-  /* line 341, ../../scss/modules/_grid.scss */
+  /* line 347, ../../scss/modules/_grid.scss */
   .grid__item__rollover a:after {
     display: none;
   }
 }
 
-/* line 352, ../../scss/modules/_grid.scss */
+/* line 358, ../../scss/modules/_grid.scss */
 .column.ng-enter {
   -moz-animation: columnEnter 1s forwards;
   -webkit-animation: columnEnter 1s forwards;
   animation: columnEnter 1s forwards;
 }
-/* line 355, ../../scss/modules/_grid.scss */
+/* line 361, ../../scss/modules/_grid.scss */
 .column.ng-enter > div {
   -moz-animation: cardEnter 0.75s forwards;
   -webkit-animation: cardEnter 0.75s forwards;
   animation: cardEnter 0.75s forwards;
 }
 
-/* line 360, ../../scss/modules/_grid.scss */
+/* line 366, ../../scss/modules/_grid.scss */
 .column.ng-leave {
   display: none;
 }
-/* line 362, ../../scss/modules/_grid.scss */
+/* line 368, ../../scss/modules/_grid.scss */
 .column.ng-leave > div {
   -moz-transform: none;
   -ms-transform: none;
@@ -1559,7 +1558,7 @@ ul.grid__item__wrapper__content__technologies li {
     transform: scale3d(1, 1, 1);
   }
 }
-/* line 392, ../../scss/modules/_grid.scss */
+/* line 398, ../../scss/modules/_grid.scss */
 .touch .grid__item__rollover {
   top: 0;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);

@@ -133,14 +133,7 @@
 	}
 }
 
-.grid__item__wrapper--project{
-
-	h2{
-		color: $orange;
-		margin: em(8px, 22px) em(10px, 22px) em(8px, 22px);
-		padding-bottom: em(8px, 22px);
-		border-bottom: 1px solid rgba($grey, 0.5);
-	}
+.grid__item__wrapper--figure {
 	figure{
 		display: block;
 		overflow: hidden;
@@ -156,6 +149,16 @@
 	img{
 		width:100%;
 	}
+}
+.grid__item__wrapper--project{
+
+	h2{
+		color: $orange;
+		margin: em(8px, 22px) em(10px, 22px) em(8px, 22px);
+		padding-bottom: em(8px, 22px);
+		border-bottom: 1px solid rgba($grey, 0.5);
+	}
+	
 	p{
 		color: $firefly;
 	}
@@ -231,6 +234,13 @@ ul.grid__item__wrapper__content__technologies{
 		line-height: em(40px, 36px);
 	}
 
+	&--skills {
+		background-color: $green;
+	}
+	&--contact {
+		background-color: $red;
+	}
+
 	&:hover .grid__item__rollover{
 			top: 0;
 			
@@ -246,7 +256,6 @@ ul.grid__item__wrapper__content__technologies{
 .grid__item__wrapper--plugin{
 	@extend .grid__item__wrapper--project;
 	background-color: $blue;
-	padding-top: 15px;
 
 	h2{
 		color: $white;
@@ -273,12 +282,9 @@ ul.grid__item__wrapper__content__technologies{
 }
 .grid__item__wrapper--news {
 	@extend .grid__item__wrapper--plugin;
-	background-color: $red;
 }
 .grid__item__wrapper--conference{
 	@extend .grid__item__wrapper--plugin;
-	background-color: $green;
-
 	p{
 		font-size: em(16px);
 		padding-bottom: em(14px, 16px);

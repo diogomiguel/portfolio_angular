@@ -11,10 +11,10 @@
     {
         "id": "aceplay",
         "category": "project",
-        "content": "",
+        "content": "acePLAYcasino.com is free to play responsive Las Vegas-style simulated casino gaming website and the second GAN website built with the one responsive website platform.",
         "image": "assets/imgs/aceplay/thumb.jpg",
         "technologies": ["Compass", "Feature Detection", "Mercurial", "JSTL", "RWD"],
-        "title": "acePLAYcasino.com",
+        "title": "acePLAYCasino.com",
         "website": "http://aceplaycasino.com/"
     },
 
@@ -30,7 +30,7 @@
     {
         "id": "sanmanuel",
         "category": "project",
-        "content": "",
+        "content": "What may seem as another SIM Gaming website, was in fact one of my biggest challenges for being the first ever GAN website using the one-website build approach.",
         "image": "assets/imgs/sanmanuel/thumb.jpg",
         "technologies": ["Compass", "Feature Detection", "Grunt", "JSTL", "RWD"],
         "title": "San Manuel Casino",
@@ -44,16 +44,6 @@
     },
 
     {
-        "id": "maryland",
-        "category": "project",
-        "content": "",
-        "image": "assets/imgs/maryland/thumb.jpg",
-        "technologies": ["Compass", "Feature Detection", "JSTL", "RWD", "Susy"],
-        "title": "Live! Social Casino (mobile)",
-        "website": "https://m.livecasino.social/"
-    },
-
-    {
         "id": "rut",
         "category": "project",
         "content": "Really Useful Theatres Group owns and operates six commercial theatres in the heart of London’s West End. The Group is wholly owned by Andrew Lloyd Webber.",
@@ -61,6 +51,16 @@
         "technologies": ["Expression Engine", "Grunt", "HTML5/CSS3", "JavaScript/jQuery", "Sass"],
         "title": "Really Useful Theatres",
         "website": "http://reallyusefultheatres.co.uk"
+    },
+
+    {
+        "id": "maryland",
+        "category": "project",
+        "content": "Live! Social Casino is part of Maryland Live! Casino, one of the largest commercial casinos in Baltimore, USA.",
+        "image": "assets/imgs/maryland/thumb.jpg",
+        "technologies": ["Compass", "Feature Detection", "JSTL", "RWD", "Susy"],
+        "title": "Live! Social Casino (mobile)",
+        "website": "https://m.livecasino.social/"
     },
 
     {
@@ -143,11 +143,7 @@
         "website": "http://24sq.com"
     },
 
-    {
-        "id": "contact",
-        "category": "about",
-        "title": "Contact me"
-    },
+    
 
     {
         "id": "activa",
@@ -157,6 +153,11 @@
         "technologies": ["HTML5/CSS", "jQuery Mobile", "PhoneGap", "Sass", "xCode"],
         "title": "Hosiery Selector",
         "website": "http://www.activahealthcare.co.uk/hosiery-selector-sizer"
+    },
+    {
+        "id": "contact",
+        "category": "about",
+        "title": "Contact me"
     },
 
     {
@@ -197,16 +198,7 @@
         "website": "http://www.meetup.com/londonajax/events/173263912",
         "subtype": "conference"
     },
-    
-    {
-        "id": "whitedesk",
-        "category": "project",
-        "content": "Web portfolio for a fellow web designer friend, built around 2010 in Flash and ActionScript 3.",
-        "image": "assets/imgs/whitedesk/thumb.jpg",
-        "technologies": ["ActionScript 3", "Flash"],
-        "title": "The White Desk",
-        "website": "http://thewhitedesk.com"
-    },
+
 
     
     {
@@ -217,5 +209,15 @@
         "title": "GA Tracker",
         "website": "http://devot-ee.com/add-ons/google-analytics-tracker",
         "subtype": "plugin"
+    },
+
+    {
+        "id": "whitedesk",
+        "category": "project",
+        "content": "Web portfolio for a fellow web designer friend, built around 2010 in Flash and ActionScript 3.",
+        "image": "assets/imgs/whitedesk/thumb.jpg",
+        "technologies": ["ActionScript 3", "Flash"],
+        "title": "The White Desk",
+        "website": "http://thewhitedesk.com"
     }
 ]

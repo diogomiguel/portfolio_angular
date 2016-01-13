@@ -13,13 +13,16 @@ angular.module('myPortfolio', [
   'myPortfolio.contact',
   'myPortfolio.skills'
 ]).
-config(['$routeProvider', function($routeProvider) {
+config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
   $routeProvider.otherwise(
     {redirectTo: '/'}
   );
+  $locationProvider.html5Mode({
+    enabled:true
+  });
 }])
 
-.run(['$rootScope', '$location', '$animate', 'smoothScroll', function($rootScope, $location, $animate, smoothScroll) {
+.run(['$rootScope', '$location', 'smoothScroll', function($rootScope, $location, smoothScroll) {
     var curPath = $location.path();
     var scrollToDetailsOptions = {
       duration: 600,
@@ -31,6 +34,8 @@ config(['$routeProvider', function($routeProvider) {
     $rootScope.selected = curPath.substring(curPath.lastIndexOf('/') + 1);
 
     
+    
+
     $rootScope.select = function(id) {
         // Set active class based on selected card id
         $rootScope.selected = id || '';

@@ -1,4 +1,24 @@
 {
+    "aceplay": {
+        "imagepath": "assets/imgs/aceplay/big.jpg",
+        "title": "acePLAYcasino.com",
+        "description": "<p><strong>acePLAYcasino.com</strong> is free to play <strong>responsive</strong> Las Vegas-style simulated casino gaming website.<br />This was the second GAN website built with the <em>one responsive website platform</em> (mobile and desktop in one), using as <strong>Boilerplate</strong> the prototype I developed as proof-of-concept for the one build</p><p>Even though most of the functionality was already built elsewhere, this project was extremely challenging because of the really short turnaround time (one development sprint to get it fully-working on Alpha).<br />Thanks to the code I've previously re-factored and transformed into <strong>decoupled modules and factories</strong<, I ended up spending less time than estimated giving me enough time to validate every single page of the website, carefully testing it in all supported browsers and mobile devices, as well as time to improve some clunky animations such as the daily bonus.</p><p>Most bugs/issues found were related with copy amends, the feedback from the client was very positive and stakeholders were also very proud of the final result</p><p><small>developed as a GameAccount Network employee.</small></p>",
+        "technologies": [
+            "Compass",
+            "Feature Detection",
+            "Grunt",
+            "HTML5/CSS3",
+            "Mercurial",
+            "Modernizr",
+            "JavaScript/jQuery",
+            "JSTL",
+            "RWD",
+            "Sass"
+        ],
+        "links": [
+            ["Link to Website", "https://www.aceplaycasino.com"]
+        ]
+    },
     "activa": {
         "imagepath": "assets/imgs/activa/big.jpg",
         "title": "Hosiery Selector",
@@ -34,8 +54,7 @@
             "Modernizr",
             "JavaScript/jQuery",
             "JSTL",
-            "Responsive",
-            "RequireJS",
+            "RWD",
             "Sass",
             "Susy Grids"
         ],
@@ -69,7 +88,7 @@
             "Grunt",
             "HTML/CSS",
             "JavaScript/jQuery",
-            "Responsive",
+            "RWD",
             "Sass"
         ],
         "links": [
@@ -89,6 +108,27 @@
         ],
         "links": [
             ["Link to Website", "http://www.katereiddop.com"]
+        ]
+    },
+    "maryland": {
+        "imagepath": "assets/imgs/maryland/big.jpg",
+        "title": "Live! Social Casino Mobile",
+        "description": "<p>Live! Social Casino is part of <strong>Maryland Live! Casino</strong>, one of the largest commercial casinos in Baltimore, USA.<br />While the development website was being built in parallel as a separate entity, I was in charge of their mobile-only new website from the ground up.</p><p>Having built club8casino Mobile website, I was completely familiar with the platform and knew which approach to take to deliver this project fast and with high-quality coding standards.<br />This allowed me to improve the <strong>OOCSS structure</strong> and make the code more modular, continuosly integrating these improvements into the <strong>Boilerplate</strong></p><p>Having finished the website way before the final deadline, was also involved in debugging, amending and providing deployment support for the Desktop version of the website.</p><p><small>developed as a GameAccount Network employee.</small></p>",
+        "technologies": [
+            "Compass",
+            "Feature Detection",
+            "Grunt",
+            "HTML5/CSS3",
+            "Mercurial",
+            "Modernizr",
+            "JavaScript/jQuery",
+            "JSTL",
+            "RWD",
+            "Sass",
+            "Susy Grids"
+        ],
+        "links": [
+            ["Link to Website", "https://m.livecasino.social/"]
         ]
     },
     "mfb": {
@@ -133,6 +173,26 @@
             ["Link to GA Tracker module", "https://github.com/diogomiguel/ee_ga_tracker"]
         ]
     },
+    "sanmanuel": {
+        "imagepath": "assets/imgs/sanmanuel/big.jpg",
+        "title": "SanManuel Indian Bingo & Casino",
+        "description": "<p>Offering the most fun in gaming, dining & entertainment since 1986, <strong>San Manuel Indian Bingo & Casino</strong> is owned & operated by a federally recognized American Indian tribe located near the city of Highland, Calif.</p><p>What may seem as another SIM Gaming website, was in fact one of my biggest challenges for being the first ever GAN website using the <em>one-website build approach</em> and for being initially assigned to a different team of developers who failed to complete it within the first deadline, thus needing someone to step in and take the lead of the front end work.</p><p>I worked together with a contractor directly managing the development flow, re-doing most of the initial work from ground up, delegating tasks and liaising with Project Managers in <strong>SCRUM</strong> iteration sessions.<br />We ended up finishing the website by the final deadline, progressively including improvements to the initial code and deploying new features in a modular way</p><p><small>developed as a GameAccount Network employee.</small></p>",
+        "technologies": [
+            "Compass",
+            "Feature Detection",
+            "Grunt",
+            "HTML5/CSS3",
+            "Mercurial",
+            "Modernizr",
+            "JavaScript/jQuery",
+            "JSTL",
+            "RWD",
+            "Sass"
+        ],
+        "links": [
+            ["Link to Website", "https://play.sanmanuel.com/"]
+        ]
+    },
     "tindrum": {
         "imagepath": "assets/imgs/tindrum/big.jpg",
         "title": "Tin Drum",
@@ -146,7 +206,7 @@
             "JSON",
             "Parallax",
             "Perch CMS",
-            "Responsive",
+            "RWD",
             "RequireJS",
             "Use-init",
             "Yeoman"
@@ -164,7 +224,7 @@
             "HTML5/CSS",
             "JavaScript/jQuery",
             "PHP",
-            "Responsive"
+            "RWD"
         ],
         "links": [
             ["Link to Website", "http://24sq.com"]
@@ -179,7 +239,7 @@
             "JavaScript/jQuery",
             "Objective C",
             "PHP",
-            "Responsive",
+            "RWD",
             "Sass"
         ],
         "links": [
