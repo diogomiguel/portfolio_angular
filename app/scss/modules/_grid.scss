@@ -25,6 +25,11 @@
     }
 }
 
+.deckgrid:after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .deckgrid .column {
     float: left;
 }

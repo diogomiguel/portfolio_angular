@@ -18,7 +18,7 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
   );
   $locationProvider.html5Mode({
     enabled:true
-  });
+  }).hashPrefix('!');
 }])
 
 .run(['$rootScope', '$location', 'smoothScroll', function($rootScope, $location, smoothScroll) {
@@ -27,7 +27,7 @@ config(['$routeProvider', '$locationProvider', function($routeProvider, $locatio
       duration: 600,
       easing: 'easeInOutQuad'
     };
-    var detailsElem = document.getElementById('js-detailsview');
+    var detailsElem = document.getElementById('js-top');
     
     // Set active class Default
     $rootScope.selected = curPath.substring(curPath.lastIndexOf('/') + 1);
