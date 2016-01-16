@@ -73,11 +73,7 @@
         "website": "http://www.tindrummusic.co.uk"
     },
 
-    {
-        "id": "skills",
-        "category": "about",
-        "title": "Skills"
-    },
+
 
     {
         "id": "club8",
@@ -87,6 +83,12 @@
         "technologies": ["Compass", "Feature Detection", "JSTL", "RWD", "Susy"],
         "title": "Club8 Casino Online",
         "website": "https://m.club8casino.com.au"
+    },
+
+    {
+        "id": "skills",
+        "category": "about",
+        "title": "Skills"
     },
         
     {
@@ -154,11 +156,7 @@
         "title": "Hosiery Selector",
         "website": "http://www.activahealthcare.co.uk/hosiery-selector-sizer"
     },
-    {
-        "id": "contact",
-        "category": "about",
-        "title": "Contact me"
-    },
+
 
     {
         "id": "wct",
@@ -177,6 +175,12 @@
         "title": "Web Meet-up",
         "website": "http://www.meetup.com/londonweb/events/140671892",
         "subtype": "conference"
+    },
+
+    {
+        "id": "contact",
+        "category": "about",
+        "title": "Contact me"
     },
 
 

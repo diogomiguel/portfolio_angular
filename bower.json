@@ -16,8 +16,7 @@
     "modernizr": "~2.7.1",
     "html5-boilerplate": "~5.2.0",
     "angular-deckgrid": "~0.5.0",
-    "angular-smooth-scroll": "~1.7.1",
-    "SVG-Loaders": "~1.0.1",
+    "ngSmoothScroll": "~2.0.0"
   },
   "overrides": {
     "angular-deckgrid": {

@@ -139,7 +139,7 @@ $an-details-mh--xs: 1200px;
 }
 .detailsview.ng-enter{	
 	@include animation(detailsview--enter 1s ease-out);
-	background: url('../../bower_components/svg-loaders/svg-loaders/three-dots.svg') no-repeat center center $white;
+	background: url($images-path + 'three-dots.svg') no-repeat center center $white;
 	background-size: 7.5% auto;
 }
 .detailsview.ng-leave{

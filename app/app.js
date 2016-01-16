@@ -4,7 +4,6 @@
 angular.module('myPortfolio', [
   'ngRoute',
   'akoenig.deckgrid',
-  'angular-loading-bar',
   'smoothScroll',
   'myPortfolio.grid',
   'myPortfolio.project',
